@@ -1,0 +1,27 @@
+package bimestre2;
+
+import java.util.Scanner;
+
+public class media {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int n1, n2, m;
+		
+		System.out.println("Digite a primeira nota: ");
+		n1=leia.nextInt();
+		
+		System.out.println("Digite a segunda nota: ");
+		n2=leia.nextInt();
+		
+		m=(n1+n2)/2;
+		
+		if(m<6) {
+			System.out.println("Reprovado");
+		}else {
+			System.out.println("Aprovado");
+		}
+		leia.close();
+	}
+
+}
